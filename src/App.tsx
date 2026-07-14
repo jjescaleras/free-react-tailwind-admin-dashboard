@@ -11,8 +11,10 @@ import Avatars from "./pages/UiElements/Avatars";
 import Buttons from "./pages/UiElements/Buttons";
 import LineChart from "./pages/Charts/LineChart";
 import BarChart from "./pages/Charts/BarChart";
+import PieChart from "./pages/Charts/PieChart";
 import Calendar from "./pages/Calendar";
 import BasicTables from "./pages/Tables/BasicTables";
+import ProTables from "./pages/Tables/ProTables";
 import FormElements from "./pages/Forms/FormElements";
 import Blank from "./pages/Blank";
 import AppLayout from "./layout/AppLayout";
@@ -39,6 +41,7 @@ export default function App() {
 
             {/* Tables */}
             <Route path="/basic-tables" element={<BasicTables />} />
+            <Route path="/pro-tables" element={<ProTables />} />
 
             {/* Ui Elements */}
             <Route path="/alerts" element={<Alerts />} />
@@ -51,6 +54,7 @@ export default function App() {
             {/* Charts */}
             <Route path="/line-chart" element={<LineChart />} />
             <Route path="/bar-chart" element={<BarChart />} />
+            <Route path="/pie-chart" element={<PieChart />} />
           </Route>
 
           {/* Auth Layout */}

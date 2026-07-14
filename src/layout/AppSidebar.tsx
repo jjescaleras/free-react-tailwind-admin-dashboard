@@ -49,7 +49,10 @@ const navItems: NavItem[] = [
   {
     name: "Tables",
     icon: <TableIcon />,
-    subItems: [{ name: "Basic Tables", path: "/basic-tables", pro: false }],
+    subItems: [
+      { name: "Basic Tables", path: "/basic-tables", pro: false },
+      { name: "Pro Tables", path: "/pro-tables", pro: false, new: true },
+    ],
   },
   {
     name: "Pages",
@@ -68,6 +71,7 @@ const othersItems: NavItem[] = [
     subItems: [
       { name: "Line Chart", path: "/line-chart", pro: false },
       { name: "Bar Chart", path: "/bar-chart", pro: false },
+      { name: "Pie Chart", path: "/pie-chart", pro: false },
     ],
   },
   {
